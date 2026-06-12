@@ -1,0 +1,3 @@
+loadScenario(1);
+function loadScenario(id){document.getElementById('scenarioTitle').innerHTML=scenarios[id].title;document.getElementById('scenarioDescription').innerHTML=scenarios[id].description;document.getElementById('diagramArea').innerHTML=scenarios[id].diagram;}
+function startSignalFlow(){} function resetSignalFlow(){} function generateFailure(){document.getElementById('alarmBox').innerHTML='SIMULATED FAILURE';}
