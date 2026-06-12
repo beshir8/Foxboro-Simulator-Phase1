@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foxboro Pneumatic System Modernization Simulator</title>
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header><div class="header-left"><h1>FOXBORO PNEUMATIC SYSTEM MODERNIZATION SIMULATOR</h1>
+<h3>RASCO Ethylene Plant</h3><p>Technical Evaluation Department</p></div></header>
+<nav>
+<button onclick="loadScenario(1)">Current System</button>
+<button onclick="loadScenario(2)">Upgrade Plan 1</button>
+<button onclick="loadScenario(3)">Upgrade Plan 2</button>
+<button onclick="loadScenario(4)">Upgrade Plan 3</button>
+</nav>
+<section class="scenario-banner">
+<h2 id="scenarioTitle">CURRENT SYSTEM</h2>
+<p id="scenarioDescription">Legacy Foxboro Pneumatic Architecture</p>
+</section>
+<section id="diagramArea"></section>
+<section class="control-panel">
+<button onclick="startSignalFlow()">Start Signal Flow</button>
+<button onclick="resetSignalFlow()">Reset</button>
+<button onclick="generateFailure()">Failure Simulation</button>
+</section>
+<section class="alarm-panel"><h3>Alarm Panel</h3><div id="alarmBox">No Active Alarms</div></section>
+<script src="js/scenarios.js"></script>
+<script src="js/app.js"></script>
+</body></html>
